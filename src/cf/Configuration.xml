@@ -271,13 +271,22 @@
 			<Catalog>Валюты</Catalog>
 			<Catalog>ВидыЦен</Catalog>
 			<Catalog>Контрагенты</Catalog>
+			<Catalog>Организации</Catalog>
 			<Catalog>Пользователи</Catalog>
 			<Catalog>Склады</Catalog>
 			<Catalog>Товары</Catalog>
+			<Document>ЗаказыТоваров</Document>
+			<Document>ПоступлениеДенег</Document>
+			<Document>ПриходТовара</Document>
+			<Document>РасходТовара</Document>
 			<Enum>ВидыТоваров</Enum>
+			<Enum>СостоянияЗаказов</Enum>
 			<DataProcessor>РедактированиеЦен</DataProcessor>
 			<InformationRegister>КурсыВалют</InformationRegister>
 			<InformationRegister>ЦеныТоваров</InformationRegister>
+			<AccumulationRegister>Взаиморасчеты</AccumulationRegister>
+			<AccumulationRegister>Продажи</AccumulationRegister>
+			<AccumulationRegister>ТоварныеЗапасы</AccumulationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

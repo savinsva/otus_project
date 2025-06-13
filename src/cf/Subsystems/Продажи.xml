@@ -25,6 +25,12 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЦеныТоваров</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.КурсыВалют</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РедактированиеЦен</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗаказыТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РасходТовара</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.Взаиморасчеты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.Продажи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ТоварныеЗапасы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеДенег</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
