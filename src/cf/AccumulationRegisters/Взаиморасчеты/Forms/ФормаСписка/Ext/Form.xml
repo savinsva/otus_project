@@ -130,6 +130,11 @@
 					<ContextMenu name="Сумма_КонтекстноеМеню" id="15"/>
 					<ExtendedTooltip name="СуммаExtendedTooltip" id="25"/>
 				</LabelField>
+				<LabelField name="Скидка" id="36">
+					<DataPath>Список.Скидка</DataPath>
+					<ContextMenu name="СкидкаКонтекстноеМеню" id="37"/>
+					<ExtendedTooltip name="СкидкаРасширеннаяПодсказка" id="38"/>
+				</LabelField>
 				<LabelField name="Валюта" id="12">
 					<DataPath>Список.Валюта</DataPath>
 					<Title>

@@ -105,6 +105,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Report.БонусныеБаллы</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.КурсыВалют</name>
 		<right>
 			<name>Read</name>
@@ -196,6 +207,60 @@
 		<right>
 			<name>InteractiveClearDeletionMark</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.БонусныеБаллы</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>TotalsControl</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.БонусныеБаллы.StandardAttribute.RecordType</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.БонусныеБаллы.StandardAttribute.Active</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.БонусныеБаллы.StandardAttribute.LineNumber</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.БонусныеБаллы.StandardAttribute.Recorder</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.БонусныеБаллы.StandardAttribute.Period</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -522,6 +587,13 @@
 		</right>
 	</object>
 	<object>
+		<name>AccumulationRegister.БонусныеБаллы.Resource.КСписанию</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>AccumulationRegister.Взаиморасчеты.Dimension.Контрагент</name>
 		<right>
 			<name>Edit</name>
@@ -650,6 +722,17 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Report.ДанныеЛояльностиПоПокупателям</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -940,6 +1023,13 @@
 		</right>
 	</object>
 	<object>
+		<name>AccumulationRegister.БонусныеБаллы.Dimension.ВидКартЛояльности</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.Склады</name>
 		<right>
 			<name>Read</name>
@@ -955,6 +1045,13 @@
 		</right>
 	</object>
 	<object>
+		<name>AccumulationRegister.БонусныеБаллы.Resource.Начислено</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>AccumulationRegister.Продажи.Dimension.Товар</name>
 		<right>
 			<name>Edit</name>
@@ -963,6 +1060,13 @@
 	</object>
 	<object>
 		<name>AccumulationRegister.Продажи.Resource.Сумма</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.БонусныеБаллы.Dimension.Партнер</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>

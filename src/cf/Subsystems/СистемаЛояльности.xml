@@ -23,6 +23,10 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Report.ПрайсЛист</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВидыКартЛояльности</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.КартыЛояльности</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.БонусныеБаллы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.БонусныеБаллы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетПоВзаиморасчетам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ДанныеЛояльностиПоПокупателям</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

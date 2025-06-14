@@ -286,6 +286,8 @@
 			<Enum>СостоянияЗаказов</Enum>
 			<Enum>СтатусыВидовКартЛояльности</Enum>
 			<Enum>СтатусыКартЛояльности</Enum>
+			<Report>БонусныеБаллы</Report>
+			<Report>ДанныеЛояльностиПоПокупателям</Report>
 			<Report>ОстаткиТоваровНаСкладах</Report>
 			<Report>ОтчетПоВзаиморасчетам</Report>
 			<Report>ПрайсЛист</Report>
@@ -295,6 +297,7 @@
 			<AccumulationRegister>Взаиморасчеты</AccumulationRegister>
 			<AccumulationRegister>Продажи</AccumulationRegister>
 			<AccumulationRegister>ТоварныеЗапасы</AccumulationRegister>
+			<AccumulationRegister>БонусныеБаллы</AccumulationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
