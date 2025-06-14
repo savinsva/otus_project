@@ -200,8 +200,8 @@
 			<RegisterRecordsWritingOnPost>WriteSelected</RegisterRecordsWritingOnPost>
 			<SequenceFilling>AutoFill</SequenceFilling>
 			<RegisterRecords>
-				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ТоварныеЗапасы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.Взаиморасчеты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ТоварныеЗапасы</xr:Item>
 			</RegisterRecords>
 			<PostInPrivilegedMode>true</PostInPrivilegedMode>
 			<UnpostInPrivilegedMode>true</UnpostInPrivilegedMode>
@@ -489,7 +489,7 @@
 							<ChoiceParameterLinks/>
 							<ChoiceParameters>
 								<app:item name="Отбор.Вид">
-									<app:value xsi:type="xr:DesignTimeRef">34456327-2955-4da8-a315-e4731bd82761.8b34502a-e8b9-444d-92f3-0631ccef1842</app:value>
+									<app:value xsi:type="xr:DesignTimeRef">Enum.ВидыТоваров.EnumValue.Товар</app:value>
 								</app:item>
 							</ChoiceParameters>
 							<QuickChoice>DontUse</QuickChoice>

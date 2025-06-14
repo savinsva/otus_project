@@ -269,7 +269,9 @@
 			<Role>МенеджерПоПродажам</Role>
 			<CommonModule>Пользователи</CommonModule>
 			<Catalog>Валюты</Catalog>
+			<Catalog>ВидыКартЛояльности</Catalog>
 			<Catalog>ВидыЦен</Catalog>
+			<Catalog>КартыЛояльности</Catalog>
 			<Catalog>Контрагенты</Catalog>
 			<Catalog>Организации</Catalog>
 			<Catalog>Пользователи</Catalog>
@@ -279,8 +281,14 @@
 			<Document>ПоступлениеДенег</Document>
 			<Document>ПриходТовара</Document>
 			<Document>РасходТовара</Document>
+			<Enum>ВидыБонусныхПрограмм</Enum>
 			<Enum>ВидыТоваров</Enum>
 			<Enum>СостоянияЗаказов</Enum>
+			<Enum>СтатусыВидовКартЛояльности</Enum>
+			<Enum>СтатусыКартЛояльности</Enum>
+			<Report>ОстаткиТоваровНаСкладах</Report>
+			<Report>ОтчетПоВзаиморасчетам</Report>
+			<Report>ПрайсЛист</Report>
 			<DataProcessor>РедактированиеЦен</DataProcessor>
 			<InformationRegister>КурсыВалют</InformationRegister>
 			<InformationRegister>ЦеныТоваров</InformationRegister>
