@@ -90,12 +90,11 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаСкидкиРасширеннаяПодсказка" id="37"/>
 			<ChildItems>
-				<CheckBoxField name="НеНачислятьБаллыПриОплатеБонусами" id="22">
-					<DataPath>Объект.НеНачислятьБаллыПриОплатеБонусами</DataPath>
-					<EditMode>EnterOnInput</EditMode>
+				<CheckBoxField name="АвтоматическиСписыватьБаллы" id="38">
+					<DataPath>Объект.АвтоматическиСписыватьБаллы</DataPath>
 					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="НеНачислятьБаллыПриОплатеБонусамиКонтекстноеМеню" id="23"/>
-					<ExtendedTooltip name="НеНачислятьБаллыПриОплатеБонусамиРасширеннаяПодсказка" id="24"/>
+					<ContextMenu name="АвтоматическиСписыватьБаллыКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="АвтоматическиСписыватьБаллыРасширеннаяПодсказка" id="40"/>
 				</CheckBoxField>
 				<InputField name="ПроцентСкидки" id="30">
 					<DataPath>Объект.ПроцентСкидки</DataPath>

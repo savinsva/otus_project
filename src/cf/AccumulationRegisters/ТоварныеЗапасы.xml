@@ -236,18 +236,18 @@
 					<FullTextSearch>Use</FullTextSearch>
 				</Properties>
 			</Resource>
-			<Dimension uuid="d07dbf1f-4dfa-4242-97d1-98e6560a1e41">
+			<Dimension uuid="73b656c9-5b30-46a6-ae6a-e32e1307cb49">
 				<Properties>
-					<Name>Товар</Name>
+					<Name>Склад</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Товар</v8:content>
+							<v8:content>Склад</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:CatalogRef.Товары</v8:Type>
+						<v8:Type>cfg:CatalogRef.Склады</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -274,18 +274,18 @@
 					<UseInTotals>true</UseInTotals>
 				</Properties>
 			</Dimension>
-			<Dimension uuid="73b656c9-5b30-46a6-ae6a-e32e1307cb49">
+			<Dimension uuid="d07dbf1f-4dfa-4242-97d1-98e6560a1e41">
 				<Properties>
-					<Name>Склад</Name>
+					<Name>Товар</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Склад</v8:content>
+							<v8:content>Товар</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:CatalogRef.Склады</v8:Type>
+						<v8:Type>cfg:CatalogRef.Товары</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>

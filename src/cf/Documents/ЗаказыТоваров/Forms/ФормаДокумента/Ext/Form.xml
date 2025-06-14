@@ -243,6 +243,15 @@
 							<ContextMenu name="СостояниеЗаказаКонтекстноеМеню" id="91"/>
 							<ExtendedTooltip name="СостояниеЗаказаExtendedTooltip" id="92"/>
 						</RadioButtonField>
+						<CheckBoxField name="СписатьБаллы" id="120">
+							<DataPath>Объект.СписатьБаллы</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="СписатьБаллыКонтекстноеМеню" id="121"/>
+							<ExtendedTooltip name="СписатьБаллыРасширеннаяПодсказка" id="122"/>
+							<Events>
+								<Event name="OnChange">СписатьБаллыПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
 					</ChildItems>
 				</UsualGroup>
 			</ChildItems>
@@ -326,6 +335,26 @@
 							<Events>
 								<Event name="OnChange">ТоварыКоличествоПриИзменении</Event>
 							</Events>
+						</InputField>
+						<InputField name="ТоварыПроцентСкидки" id="123">
+							<DataPath>Объект.Товары.ПроцентСкидки</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>% скидки/начисления</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ТоварыПроцентСкидкиКонтекстноеМеню" id="124"/>
+							<ExtendedTooltip name="ТоварыПроцентСкидкиРасширеннаяПодсказка" id="125"/>
+						</InputField>
+						<InputField name="ТоварыБаллы" id="126">
+							<DataPath>Объект.Товары.Баллы</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ТоварыБаллыКонтекстноеМеню" id="127"/>
+							<ExtendedTooltip name="ТоварыБаллыРасширеннаяПодсказка" id="128"/>
 						</InputField>
 						<InputField name="ТоварыСумма" id="85" DisplayImportance="High">
 							<DataPath>Объект.Товары.Сумма</DataPath>
@@ -431,6 +460,49 @@
 					<v8:Length>0</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПроцентНачисляемыхБаллов" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Процент начисляемых баллов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПроцентСкидки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Процент скидки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВидБонуснойПрограммы" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид бонусной программы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ВидыБонусныхПрограмм</v8:Type>
 			</Type>
 		</Attribute>
 		<ConditionalAppearance>

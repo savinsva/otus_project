@@ -309,11 +309,11 @@
 			</Attribute>
 			<Attribute uuid="5bc6f11a-1476-48e9-a2a4-64f9c6af457a">
 				<Properties>
-					<Name>НеНачислятьБаллыПриОплатеБонусами</Name>
+					<Name>АвтоматическиСписыватьБаллы</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Не начислять баллы при оплате бонусами</v8:content>
+							<v8:content>Автоматически списывать баллы</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

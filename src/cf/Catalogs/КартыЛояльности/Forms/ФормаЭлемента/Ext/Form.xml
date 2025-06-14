@@ -3,6 +3,9 @@
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
 	<ChildItems>
 		<InputField name="Наименование" id="1">
 			<DataPath>Объект.Description</DataPath>
@@ -17,6 +20,9 @@
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="ВладелецКонтекстноеМеню" id="5"/>
 			<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="6"/>
+			<Events>
+				<Event name="OnChange">ВладелецПриИзменении</Event>
+			</Events>
 		</InputField>
 		<InputField name="Штрихкод" id="7">
 			<DataPath>Объект.Штрихкод</DataPath>
@@ -40,7 +46,7 @@
 			<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="15"/>
 		</InputField>
 		<UsualGroup name="ГруппаПроценты" id="22">
-			<ReadOnly>true</ReadOnly>
+			<Enabled>false</Enabled>
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
