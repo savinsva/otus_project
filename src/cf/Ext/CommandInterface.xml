@@ -4,6 +4,7 @@
 		<Subsystem>Subsystem.Закупки</Subsystem>
 		<Subsystem>Subsystem.Продажи</Subsystem>
 		<Subsystem>Subsystem.СистемаЛояльности</Subsystem>
+		<Subsystem>Subsystem.ТоварныеЗапасы</Subsystem>
 		<Subsystem>Subsystem.Сервис</Subsystem>
 	</SubsystemsOrder>
 </CommandInterface>

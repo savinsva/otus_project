@@ -258,22 +258,31 @@
 			<Subsystem>Закупки</Subsystem>
 			<Subsystem>Продажи</Subsystem>
 			<Subsystem>СистемаЛояльности</Subsystem>
+			<Subsystem>ТоварныеЗапасы</Subsystem>
 			<Subsystem>Сервис</Subsystem>
 			<CommonPicture>Закупки</CommonPicture>
 			<CommonPicture>Продажи</CommonPicture>
 			<CommonPicture>Сервис</CommonPicture>
 			<CommonPicture>СистемаЛояльности</CommonPicture>
+			<CommonPicture>ТоварныеЗапасы</CommonPicture>
 			<SessionParameter>ТекущийПользователь</SessionParameter>
 			<Role>Администратор</Role>
 			<Role>МенеджерПоЗакупкам</Role>
 			<Role>МенеджерПоПродажам</Role>
+			<CommonTemplate>PinkRabbitMQLinux</CommonTemplate>
+			<CommonTemplate>PinkRabbitMQ</CommonTemplate>
+			<CommonModule>ИнтеграцияRabbitMQ</CommonModule>
 			<CommonModule>Пользователи</CommonModule>
+			<EventSubscription>ВыгрузкаВRabbitMQ</EventSubscription>
+			<ScheduledJob>ОтправкаВRabbitMQ</ScheduledJob>
+			<DefinedType>ОбъектыИнтеграцииRabbitMQ</DefinedType>
 			<Catalog>Валюты</Catalog>
 			<Catalog>ВидыКартЛояльности</Catalog>
 			<Catalog>ВидыЦен</Catalog>
 			<Catalog>КартыЛояльности</Catalog>
 			<Catalog>Контрагенты</Catalog>
 			<Catalog>Организации</Catalog>
+			<Catalog>ПакетыОбмена</Catalog>
 			<Catalog>Пользователи</Catalog>
 			<Catalog>Склады</Catalog>
 			<Catalog>Товары</Catalog>
@@ -291,8 +300,11 @@
 			<Report>ОстаткиТоваровНаСкладах</Report>
 			<Report>ОтчетПоВзаиморасчетам</Report>
 			<Report>ПрайсЛист</Report>
+			<Report>Продажи</Report>
+			<DataProcessor>PinkRabbitMQ</DataProcessor>
 			<DataProcessor>РедактированиеЦен</DataProcessor>
 			<InformationRegister>КурсыВалют</InformationRegister>
+			<InformationRegister>ОчередьНаВыгрузкуВRabbitMQ</InformationRegister>
 			<InformationRegister>ЦеныТоваров</InformationRegister>
 			<AccumulationRegister>Взаиморасчеты</AccumulationRegister>
 			<AccumulationRegister>Продажи</AccumulationRegister>

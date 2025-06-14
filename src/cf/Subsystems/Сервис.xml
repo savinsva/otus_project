@@ -23,11 +23,12 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВидыЦен</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Склады</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Валюты</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РедактированиеЦен</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Организации</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.БонусныеБаллы</xr:Item>
 			</Content>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<Subsystem>ИнтеграцияRabbitMQ</Subsystem>
+		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>

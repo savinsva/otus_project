@@ -89,6 +89,16 @@
 					<ContextMenu name="КонтактноеЛицоКонтекстноеМеню" id="23"/>
 					<ExtendedTooltip name="КонтактноеЛицоРасширеннаяПодсказка" id="24"/>
 				</LabelField>
+				<LabelField name="Телефон" id="28">
+					<DataPath>Список.Телефон</DataPath>
+					<ContextMenu name="ТелефонКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="ТелефонРасширеннаяПодсказка" id="30"/>
+				</LabelField>
+				<LabelField name="ЭлектроннаяПочта" id="31">
+					<DataPath>Список.ЭлектроннаяПочта</DataPath>
+					<ContextMenu name="ЭлектроннаяПочтаКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="ЭлектроннаяПочтаРасширеннаяПодсказка" id="33"/>
+				</LabelField>
 			</ChildItems>
 		</Table>
 	</ChildItems>
