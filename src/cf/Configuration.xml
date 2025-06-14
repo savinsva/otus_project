@@ -269,6 +269,7 @@
 			<Role>Администратор</Role>
 			<Role>МенеджерПоЗакупкам</Role>
 			<Role>МенеджерПоПродажам</Role>
+			<Role>RabbitMQ</Role>
 			<CommonTemplate>PinkRabbitMQLinux</CommonTemplate>
 			<CommonTemplate>PinkRabbitMQ</CommonTemplate>
 			<CommonModule>ИнтеграцияRabbitMQ</CommonModule>
