@@ -304,14 +304,14 @@
 			<Catalog>ВидыКартЛояльности</Catalog>
 			<Catalog>ВидыЦен</Catalog>
 			<Catalog>КартыЛояльности</Catalog>
+			<Catalog>КлючевыеОперации</Catalog>
 			<Catalog>Контрагенты</Catalog>
 			<Catalog>Организации</Catalog>
 			<Catalog>ПакетыОбмена</Catalog>
 			<Catalog>Пользователи</Catalog>
+			<Catalog>ПрофилиКлючевыхОпераций</Catalog>
 			<Catalog>Склады</Catalog>
 			<Catalog>Товары</Catalog>
-			<Catalog>КлючевыеОперации</Catalog>
-			<Catalog>ПрофилиКлючевыхОпераций</Catalog>
 			<Document>ЗаказыТоваров</Document>
 			<Document>ПоступлениеДенег</Document>
 			<Document>ПриходТовара</Document>
