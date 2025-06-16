@@ -29,6 +29,7 @@
 		</Properties>
 		<ChildObjects>
 			<Subsystem>ИнтеграцияRabbitMQ</Subsystem>
+			<Subsystem>ОценкаПроизводительности</Subsystem>
 		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>
