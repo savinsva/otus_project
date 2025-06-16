@@ -17,7 +17,11 @@
 			</Synonym>
 			<Comment/>
 			<Type>
+				<v8:Type>cfg:DocumentRef.ЗаказыТоваров</v8:Type>
+				<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
 				<v8:Type>cfg:CatalogRef.Товары</v8:Type>
+				<v8:Type>cfg:CatalogRef.ВидыКартЛояльности</v8:Type>
+				<v8:Type>cfg:CatalogRef.КартыЛояльности</v8:Type>
 			</Type>
 		</Properties>
 	</DefinedType>

@@ -19,6 +19,13 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ОчередьНаВыгрузкуВRabbitMQ</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПакетыОбмена</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.PinkRabbitMQ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИнтеграцияRabbitMQ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.RabbitMQ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ВыгрузкаВRabbitMQ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ОтправкаВRabbitMQ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.ОбъектыИнтеграцииRabbitMQ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.PinkRabbitMQ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.PinkRabbitMQLinux</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

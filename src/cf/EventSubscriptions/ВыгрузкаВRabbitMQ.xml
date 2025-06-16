@@ -11,7 +11,11 @@
 			</Synonym>
 			<Comment/>
 			<Source>
+				<v8:Type>cfg:CatalogObject.Контрагенты</v8:Type>
+				<v8:Type>cfg:CatalogObject.КартыЛояльности</v8:Type>
 				<v8:Type>cfg:CatalogObject.Товары</v8:Type>
+				<v8:Type>cfg:DocumentObject.ЗаказыТоваров</v8:Type>
+				<v8:Type>cfg:CatalogObject.ВидыКартЛояльности</v8:Type>
 			</Source>
 			<Event>OnWrite</Event>
 			<Handler>CommonModule.ИнтеграцияRabbitMQ.ЗаписьВОчередьВRabbitMQ</Handler>
