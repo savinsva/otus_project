@@ -1,0 +1,46 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4.puml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+' LAYOUT_WITH_LEGEND()
+
+title
+ <b>Организация системы лояльности на предприятии</b>
+end title
+
+Person(personManager, "Менеджер по продажам", "Менеджер по продажам")
+Person(personClient, "Покупатель", "Покупатель")
+
+'Системы
+System(systemSITE, "Интернет магазин", "WEB сайт \nинтернет магазин")
+
+System_Boundary(system1С, "Система учета 1С (otus_project)",) {
+    Container(СистемаЛояльности, "Система лояльности", "Карты лояльности, виды карт лояльности","")
+    Container(Продажи, "Продажи", "Заведение заказов, продажи","")
+    Container(СкладскойУчет, "Складской учет", "Товарные запасы","")
+    }
+
+SystemQueue(RabbitMQ, "Брокер Rabbit MQ", "Брокер для обмена данными", $sprite="java",)
+
+'Связи
+Rel(personManager, system1С, "Управление скидочными картами\nи работа с заказами товаров", "")
+Rel(personClient, systemSITE, "Заказ товара\n(через интернет магазин)", "")
+
+Rel(Продажи, RabbitMQ, "Заказы товаров", "https")
+
+Rel(СкладскойУчет, RabbitMQ, "Номенклатура", "https")
+Rel(СкладскойУчет, RabbitMQ, "Остатки товаров", "https")
+Rel(СкладскойУчет, RabbitMQ, "Цены", "https")
+
+Rel(СистемаЛояльности, RabbitMQ, "Карты лояльности", "https")
+
+BiRel_R(RabbitMQ, systemSITE, "Заказы товаров", "https")
+BiRel_R(RabbitMQ, systemSITE, "Данные о клиенте\n(ФИО, email, телефон)", "https")
+
+'Расположение
+Lay_R(personManager, system1С)
+Lay_D(Продажи, RabbitMQ)
+Lay_R(systemSITE, system1С)
+
+@enduml
