@@ -1,0 +1,131 @@
+@startuml
+
+!define ICONURL ../lib/1ce-icons-for-plantuml-main/dist
+!include ICONURL/common.puml
+!include ICONURL/all.puml
+!include ICONURL/v8_ScheduledJob.puml
+!include ICONURL/v8_InfoRg.puml
+!include ICONURL/v8_WebService.puml
+!include ICONURL/v8_CommonModule.puml
+!include ICONURL/v8_Catalog.puml
+!include ICONURL/v8_Document.puml
+!include ICONURL/v8_AccRg.puml
+!include ICONURL/v8_CalculationRg.puml
+!include ICONURL/v8_AccRg.puml
+
+!define _CS scale=1
+!define _MS scale=1.5
+!define _SS scale=0.5
+
+!define _ScheduledJob <$scheduledjob{_MS}>
+!define _InfoRg <$inforg{_MS}>
+!define _CalculationRg <$calculationrg{_MS}>
+!define _WebService <$webservice{_MS}>
+!define _CommonModule <$commonmodule{_MS}>
+!define _Catalog <$catalog{_MS}>
+!define _Document <$document{_MS}>
+
+
+'>>> библиотека 1ce-icons-for-plantuml (ext)
+!define v8_PUML https://raw.githubusercontent.com/plastinin/1ce-icons-for-plantuml/extended/dist/
+!include v8_PUML/common.puml
+!include v8_PUML/v8_AccRg.puml
+!include v8_PUML/v8_Document.puml
+!include v8_PUML/v8_Catalog.puml
+!include v8_PUML/v8_InfoRg.puml
+!include v8_PUML/v8_ChartsOfCharacteristicTypes.puml
+!include v8_PUML/v8_DefinedTypes.puml
+!include v8_PUML/v8_Enum.puml
+'<<<
+
+package Пропуска <<Rectangle>> #b3c6ff {
+
+_Справочник(ФизическиеЛица1, "Физические лица") {
+	 {static} ПометкаУдаления
+	 {static} Наименование
+	 ДатаРождения
+	 Пол
+	 МестоРождения
+	 Гражданство
+	 СерияДокумента
+	 НомерДокумента
+	 КемВыданДокумент
+	 КодПодразделенияДокумента
+	 ДатаВыдачиДокумента
+	 СНИЛС
+	 Фотография
+}
+_Справочник(ОбъектыДоступа, "Объекты доступа") {
+	 {static} Наименование
+	 {static} Код
+}
+_Документ(ЗаявкаНаВыдачуПропусков, "Заявка на выдачу пропусков") {
+	 {static} Дата
+	 {static} Номер
+	 ДокВидПропуска
+	 ДокПериодНачало
+	 ДокПериодЗавершение
+	 ДокОтвестственный
+	---ОбъектыДоступа---
+	 ДокОбъектДоступа
+	---ФизЛица---
+	 ДокФизЛицо
+}
+_Документ(ВыдачаПропусков, "Выдача пропусков") {
+	 {static} Дата
+	 {static} Номер
+	 ДокВидПропуска
+	 ДокПериодНачало
+	 ДокПериодЗавершение
+	 ДокОтвестственный
+	---ОбъектыДоступа---
+	 ДокОбъектДоступа
+	---ФизЛица---
+	 ДокФизЛицо
+	 ДокНомерПропуска
+}
+_Документ(БлокировкаПропуска, "Блокировка пропуска") {
+	 {static} Дата
+	 {static} Номер
+	 ДокПериодНачало
+	 ДокПериодЗавершение
+	 ДокОтвестственный
+	---ФизЛица---
+	 ДокФизЛицо
+	 ДокНомерПропуска
+}
+_РегистрСведений(АктуальностьПропусков, "Актуальность пропусков") {
+	 {static} Регистратор
+	 {static} Период
+	 <$d> ФизЛицо
+	 <$d> ОбъектДоступа
+	 <$r> НомерПропуска
+	 <$r> Заблокирован
+	 <$r> ВидПропуска
+}
+_РегистрСведений(УчетПосещений, "Учет посещений") {
+	 {static} Период
+	 <$d> ФизЛицо
+	 <$d> ОбъектДоступа
+	 <$d> НомерПропуска
+	 <$r> ВидДействия
+}
+
+}
+
+
+'Связи пропуска
+ОбъектыДоступа --> ЗаявкаНаВыдачуПропусков::ОбъектДоступа
+ФизическиеЛица1 --> ЗаявкаНаВыдачуПропусков::ФизЛицо
+ОбъектыДоступа --> ВыдачаПропусков::ОбъектДоступа
+ФизическиеЛица1 --> ВыдачаПропусков::ФизЛицо
+ФизическиеЛица1 --> БлокировкаПропуска::ФизЛицо
+БлокировкаПропуска --> АктуальностьПропусков::Регистратор
+ВыдачаПропусков --> АктуальностьПропусков::Регистратор
+ФизическиеЛица1 --> АктуальностьПропусков::ФизЛицо
+ОбъектыДоступа --> АктуальностьПропусков::ОбъектДоступа
+ФизическиеЛица1 --> УчетПосещений::ФизЛицо
+ОбъектыДоступа --> УчетПосещений::ОбъектДоступа
+
+
+@enduml
